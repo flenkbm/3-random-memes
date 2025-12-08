@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/colors.css" rel="stylesheet">
+    <link href="style/objects.css" rel="stylesheet">
+    <title>Template</title>
+</head>
+<body>
+    <script>
+        function ShowPopup(img_num) {
+            pppc = document.getElementById("popup-cont")/*PoPuP Container - PPPC*/
+            pppc.classList.remove("hidden");
+            pppc.children[1].setAttribute("src", "img/"+img_num+".png")
+        }
+        function HidePopup(){
+            pppc = document.getElementById("popup-cont")
+            pppc.classList.add("hidden")
+        }
+    </script>
+    <div class="hidden" id="popup-cont" >
+        <a onclick="HidePopup()" class="close-popup"><img src="img/cross.png" class="close-popup"></a>
+        <img src="img/_.png" alt="if you are reding this, i've messed up" id="popup-img">
+    </div>
+    <main class="cont">
+        <div class="cont" id="boxes">
+            <a onclick="ShowPopup(1)" class="box">
+                <img class="inner" src="">
+            </a>
+            <a onclick="ShowPopup(3)" class="box">
+                <img class="inner" src="">
+            </a>
+            <a onclick="ShowPopup(2)" class="box">
+                <img class="inner" src="">
+            </a>
+        </div>
+    </main>
+    <script src="imageList.js" type="text/javascript"></script>
+    <script src="imagePicker3000.js" type="text/javascript"></script>
+</body>
+</html> 
