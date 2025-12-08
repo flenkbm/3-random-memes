@@ -1,0 +1,12 @@
+:root{
+    --bg-common: #fffcf5;
+    --border-d: #1D0041;
+    /*shadows*/
+    --shad-20: rgba(0, 0, 0, 0.20);
+    --shad-30: rgba(0, 0, 0, 0.30);
+    --shad-35: rgba(0, 0, 0, 0.35);
+    --shad-40: rgba(0, 0, 0, 0.40);
+    --shad-45: rgba(0, 0, 0, 0.45);
+    --shad-50: rgba(0, 0, 0, 0.50);
+    --shad-60: rgba(0, 0, 0, 0.60);
+}
