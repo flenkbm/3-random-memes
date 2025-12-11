@@ -8,11 +8,12 @@
     <title>Template</title>
 </head>
 <body>
+    <script src="./imageList.js" type="application/javascript"></script>
     <script type="application/javascript">
         function ShowPopup(img_num) {
             pppc = document.getElementById("popup-cont")/*PoPuP Container - PPPC*/
             pppc.classList.remove("hidden");
-            pppc.children[1].setAttribute("src", "img/"+img_num+".png")
+            pppc.children[1].setAttribute("src", "img/"+img_num+images[img_num-1].type)
         }
         function HidePopup(){
             pppc = document.getElementById("popup-cont")
@@ -25,18 +26,17 @@
     </div>
     <main class="cont">
         <div class="cont" id="boxes">
-            <a onclick="ShowPopup(1)" class="box" style="width: 100px; height: 100px">
+            <a onclick="ShowPopup(1)" class="box img_cont" style="width: 100px; height: 100px">
                 <img class="inner" src="">
             </a>
-            <a onclick="ShowPopup(3)" class="box"  style="width: 100px; height: 100px">
+            <a onclick="ShowPopup(3)" class="box img_cont"  style="width: 100px; height: 100px">
                 <img class="inner" src="">
             </a>
-            <a onclick="ShowPopup(2)" class="box"  style="width: 100px; height: 100px">
+            <a onclick="ShowPopup(2)" class="box img_cont"  style="width: 100px; height: 100px">
                 <img class="inner" src="">
             </a>
         </div>
     </main>
-    <script src="./imageList.js" type="application/javascript"></script>
     <script src="./imagePicker3000.js" type="application/javascript"></script>
 </body>
 </html> 

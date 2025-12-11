@@ -1,6 +1,8 @@
 :root{
     --bg-common: #fffcf5;
+    --col-common: #ffedc4;
     --border-d: #1D0041;
+    --text-common: #1f0050;
     /*shadows*/
     --shad-20: rgba(0, 0, 0, 0.20);
     --shad-30: rgba(0, 0, 0, 0.30);
@@ -9,4 +11,12 @@
     --shad-45: rgba(0, 0, 0, 0.45);
     --shad-50: rgba(0, 0, 0, 0.50);
     --shad-60: rgba(0, 0, 0, 0.60);
+}
+
+/*also some technical stuff*/
+*{
+    font-size: 12px;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
 }
